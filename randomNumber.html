@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="output"></h1>
+    <script>
+      // naming notation for function name is recommended to use Symantic name
+      function sumAll() {
+        let num1 = parseInt(prompt("Tell me the first number"));
+        let num2 = parseInt(prompt("Tell me the second number"));
+        let sum = 0;
+        if (num1 > num2) {
+          // ICU:Intensive Care Unit 1. Initialization 2. Condition 3. Update
+          for (let i = num2; i <= num1; i++) {
+            sum = sum + i;
+            // sum += 1; identical(line # 19 and 20 is the same)
+          }
+        } else if (num2 > num1) {
+          for (let i = num1; i <= num2; i++) {
+            sum = sum + i;
+          }
+        } else {
+          sum = 0;
+        }
+        // ` sign is backtik
+        document.getElementById("output").innerHTML = `The answer is ${sum}`;
+        // document.getElementById("output").innerHTML = "The answer is  " + sum;
+        // Concatenation (string and variable using plus operator)
+      }
+      sumAll();
+    </script>
+  </body>
+</html>
