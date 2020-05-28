@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Select your dream car!</h1>
+    <select id="mySelect" onchange="showMessage();">
+      <option value="none">Select One</option>
+      <option value="tesla">Tesla</option>
+      <option value="BMW">BMW</option>
+      <option value="Bolt">Bolt</option>
+      <option value="Bugatti">Bugatti</option>
+    </select>
+    <h1 id="output"></h1>
+    <script>
+      let showMessage = function () {
+        let x = document.getElementById("mySelect").value;
+        if (x == "none") {
+          document.getElementById("output").innerHTML =
+            "You've selectd nothing. Choose a proper car";
+        } else {
+          document.getElementById(
+            "output",
+          ).innerHTML = `You've selectd ${x}. That's a great choice!`;
+        }
+      };
+    </script>
+  </body>
+</html>
