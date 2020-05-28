@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter your name:
+    <!-- inside the double quote, you need to use sigle quote, vice versa -->
+    <input type="text" onfocus="changeBackground(this, 'skyblue')" />
+
+    <script>
+      function changeBackground(element, color) {
+        element.style.background = color
+      }
+    </script>
+  </body>
+</html>
