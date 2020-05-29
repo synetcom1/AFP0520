@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!-- path ./folder_name/file_name     **** current folder-->
+    <!-- path ../folder_name/file_name    **** you need to come out of the current folder -->
+
+    <img id="image" src="../images/ocean1.jpg" alt="ocean 1" width="250" height="150">
+    <h1>The original image was ocean1, but the image will be ocaen2</h1>
+    <button onclick="changePicture();">Change Ocean</button>
+    <script>
+        let changePicture = function() {
+            document.getElementById('image').src = "../images/ocean2.jpg";
+        }
+    </script>
+</body>
+
+</html>
