@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;;
+}
+
+#board{
+    background:url(./images/background.jpg);
+    background-size: cover;
+    border:1px solid black;
+    height:400px;
+    width:400px;
+}
+
+.character{
+    background: url(./images/guest.jpg);
+    background-size:cover;
+    width:120px;
+    height:120px;
+    float:left;
+    display:none;
+}
+.thief{
+    background:url(./images/thief.jpg);
+    background-size:cover;
+}
+.hidden{
+    display:none;
+}
+.visible{
+    display:block;
+}
