@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: coral;
+            border: 1px solid black;
+            padding: 50px;
+        }
+
+        #myP,
+        #myP2 {
+            font-size: 2em;
+            font-weight: 800;
+            background-color: skyblue;
+            border: 1px sold black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checking Bubbling and Capturing</h1>
+    <div id="myDiv">
+        <p id="myP">Click here, this is Bubbling</p>
+    </div><br>
+    <div id="myDiv2">
+        <p id="myP2">Click here, this is Capturing </p>
+    </div>
+    <!-- true, and false for this bubbling and capturing
+    False: Bubbling (Facebook) -->
+    <script>
+        document.getElementById('myP').addEventListener('click', function () {
+            alert("You clicked P element");
+        }, false);
+        document.getElementById('myDiv').addEventListener('click', function () {
+            alert("You clicked Div element");
+        }, false);
+
+        document.getElementById('myP2').addEventListener('click', function () {
+            alert("You clicked P element");
+        }, true);
+        document.getElementById('myDiv2').addEventListener('click', function () {
+            alert("You clicked Div element");
+        }, true);
+    </script>
+</body>
+
+</html>
