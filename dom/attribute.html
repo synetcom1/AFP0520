@@ -1,0 +1,25 @@
+<!-- attribute means specification -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Checking attribute</h1>
+    <button id="myBtn" onclick="attributeLength();">Check length of Attribute</button>
+
+    <h1 id="output"></h1>
+    <script>
+        const attributeLength = function () {
+            const x = document.getElementById('myBtn').attributes.length;
+            document.getElementById("output").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv {
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            margin: 15px;
+            border: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Click the button to check the size of an element</h1>
+    <button onclick="checkDimension();">Check</button>
+    <div id="myDiv">
+        <b>Div Information</b>
+        height: 250px;<br>
+        width:400px;<br>
+        padding:10px;<br>
+        margin:15px;<br>
+        border: 5px;<br>
+        <p id="output"></p>
+    </div>
+    <script>
+        const checkDimension = function () {
+            const element = document.getElementById("myDiv");
+            let text = "Height including padding;" + element.clientHeight + "px<br>";
+            text += "Width including padding: " + element.clientWidth + "px<br>";
+            document.getElementById('output').innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
