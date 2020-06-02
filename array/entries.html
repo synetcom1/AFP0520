@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>array entries()</h1>
+    <p>Create an iteration object from fruit array</p>
+    <!-- dos command dir / ls -->
+
+    <h1 id="output"></h1>
+    <h1 id="output1"></h1>
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let fullList = fruits.entries();
+
+        for (element of fruits) {
+            document.getElementById('output').innerHTML += element + "<br>";
+        }
+        for (element of fullList) {
+            document.getElementById('output1').innerHTML += element + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>

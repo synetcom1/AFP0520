@@ -1,0 +1,33 @@
+<!-- 
+    concat means add something to something else
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  SEO:Search Engine Optimization-->
+    <meta name="description" content="array method will be explained">
+    <meta name="keywords" content="array, method, web, html, css, js">
+    <meta name="author" content="Steve Kim">
+    <!-- Dogs , Kangaroos are all Animal-->
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click the button to join the two arrays</p>
+    <button onclick="concatMethod()">Join two arrays</button>
+    <h1 id="output"></h1>
+    <script>
+        const concatMethod = function () {
+            let asia = ["Korea", "Japan"];
+            let europe = ["Italy", "France", "England"];
+            let countries = asia.concat(europe);
+            document.getElementById('output').innerHTML = countries;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Array includes()</H1>
+
+    <!-- Check the element inside an array -->
+
+    <h1 id="output"></h1>
+
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let n = fruits.includes("Banana", 1); // false
+        let n = fruits.includes("Banana", 0) // true
+        document.getElementById('output').innerHTML = n;
+    </script>
+</body>
+
+</html>

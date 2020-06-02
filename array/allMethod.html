@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1> All kinds of core array method</h1>
+        <button onclick="changeArray()">Try it</button>
+        <h1 id="output"></h1>
+        <script>
+            let fruits = ["Orange", "Apple", "Mango"];
+            document.getElementById('output').innerHTML = fruits;
+
+            const changeArray = function () {
+                // fruits.pop();
+                // fruits.push("Pear");
+                // fruits.shift();
+                fruits.unshift("Banana");
+                document.getElementById('output').innerHTML = fruits;
+            }
+        </script>
+        <!-- Math.random() * 12 + 1 ==> 1 through 12  -->
+        <!-- pop(), push(), shift(), unshift() -->
+    </body>
+
+    </html>
+</body>
+
+</html>

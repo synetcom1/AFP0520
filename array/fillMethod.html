@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>If you click the button, the array element will be filled with this value</p>
+    <button onclick="fillMethod()">Fill the array</button>
+    <h1 id="output"></h1>
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById('output').innerHTML = fruits;
+
+        const fillMethod = function () {
+            document.getElementById('output').innerHTML = fruits.fill("Kiwi", 0, 3);
+            // first parameter: object, second: start index, third: end index(excluded)
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- mapping means make some connection between an object and a rule -->
+    <h1>Mapping</h1>
+    <h1 id="output"></h1>
+    <script>
+        let numbers = [19, 25, 29, 30, 35];
+        let newArray = numbers.map(mapMethod);
+
+        function mapMethod(num) {
+            return Number.parseFloat(num / 3).toFixed(3);
+        }
+        document.getElementById('output').innerHTML = newArray;
+    </script>
+</body>
+
+</html>
